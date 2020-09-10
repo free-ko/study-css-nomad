@@ -19,10 +19,11 @@ body {
 }
 
 .big {
+  display: grid;
+  justify-content: center;
+  align-content: center;
   font-size: 72px;
   font-weight: bold;
-  text-align: center;
-  padding-top: 7vh;
 }
 
 .small {
@@ -32,7 +33,9 @@ body {
 }
 
 .small > div {
-  padding-top: 4vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
 
 .top__left {
@@ -52,6 +55,7 @@ body {
 
 .bottom__right {
   display: grid;
+
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
 }
