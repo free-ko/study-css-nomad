@@ -1,0 +1,87 @@
+@import "./reset.css";
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 82px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8vh;
+  margin-bottom: 8vh;
+}
+
+.grid {
+  display: grid;
+  grid-auto-rows: 350px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.box_1 {
+  background-image: linear-gradient(to right, #06beb6, #48b1bf);
+}
+
+.box_2 {
+  background-image: url("./assets/3.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.box_3 {
+  background-image: linear-gradient(to right, #e44d26, #f16529);
+}
+
+.box_4 {
+  background-image: url("./assets/2.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.box_5 {
+  background-image: linear-gradient(to right, #4ac29a, #bdfff3);
+}
+
+.box_6 {
+  background-color: black;
+}
+
+.box_7 {
+  background-color: orange;
+}
+
+.box_8 {
+  background-color: skyblue;
+}
+
+.box_9 {
+  background-image: url("./assets/1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.box_10 {
+  background-image: linear-gradient(to right, #5a3f37, #2c7744);
+}
+
+.box_11 {
+  background-image: url("./assets/4.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.box_12 {
+  background-image: linear-gradient(to right, #ee9ca7, #ffdde1);
+}
