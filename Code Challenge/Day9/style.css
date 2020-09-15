@@ -7,37 +7,53 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 100%;
   height: 100vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bg {
   z-index: -1;
-  background-color: #fb6e3b;
-  width: 100%;
-  height: 100%;
-  position: relative;
+  width: 1024px;
+  height: 726px;
+  background-color: #2f2f2f;
+  display: grid;
+  gap: 3px;
+  grid-template-columns: 30px 1fr 30px;
+  grid-template-rows: 30px 1fr 30px;
   text-transform: uppercase;
+  position: relative;
 }
 
 .title__bg {
-  z-index: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 90%;
+  position: relative;
+  grid-column: 2 / -2;
+  grid-row: 2 / -2;
+  height: 100%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
 }
 
 .title__bg--left {
-  margin: 0;
   width: 50%;
   height: 100%;
   background-image: url("assets/1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+.title__bg--left:hover {
+  width: 50%;
+  height: 100%;
+  background-image: url("assets/4.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
 }
 
 .title__bg--right {
@@ -47,6 +63,18 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  overflow: hidden;
+  transition: 1s ease;
+}
+
+.title__bg--right:hover {
+  width: 50%;
+  height: 100%;
+  background-image: url("assets/3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow: hidden;
 }
 
 .title__text {
@@ -64,7 +92,6 @@ body {
 }
 
 .chat {
-  z-index: 2;
   position: absolute;
   right: 4%;
   bottom: 11%;
@@ -79,10 +106,10 @@ body {
 }
 
 .top__box {
-  position: absolute;
-  top: 3%;
-  width: 100%;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
   background-color: white;
+  width: 100%;
   color: #fb6e3b;
   padding: 5px;
   font-style: italic;
@@ -90,24 +117,24 @@ body {
 }
 
 .right__box {
-  position: absolute;
-  left: 53%;
-  width: 100%;
-  background-color: #45ab4f;
-  color: white;
-  padding: 5px;
-  font-style: italic;
-  text-align: center;
-  transform: rotate(90deg);
+  background-color: white;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
 }
 
 .bottom__box {
-  position: absolute;
-  bottom: 3%;
-  width: 100%;
   background-color: white;
   color: #fb6e3b;
   padding: 5px;
   font-style: italic;
   text-align: center;
+  grid-row: -2 / -1;
+  grid-column: 1 / -1;
+}
+
+.left__box {
+  display: flex;
+  flex-direction: column-reverse;
+  color: white;
 }
