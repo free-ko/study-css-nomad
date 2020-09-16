@@ -75,13 +75,69 @@ body {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   color: white;
+  background-color: gray;
   padding: 5px;
   font-style: italic;
   text-align: center;
 }
 
-.left__box {
+.right__box {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 30px;
   color: white;
+}
+
+.right__box--top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  background-color: gold;
+}
+
+.right__box--bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  background-color: green;
+}
+
+.left__box {
+  display: grid;
+  grid-template-rows: 1fr 1fr 60px;
+  grid-template-columns: 30px;
+  color: white;
+}
+
+.left__box--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  background-color: gold;
+}
+
+.left__box--spicy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  writing-mode: vertical-rl;
+  background-color: green;
+}
+
+.left__box--sns {
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
 }
 
 .right__box {
@@ -90,6 +146,7 @@ body {
 
 .bottom__box {
   color: white;
+  background-color: gray;
   padding: 5px;
   font-style: italic;
   text-align: center;
@@ -99,8 +156,8 @@ body {
 
 .chat {
   position: absolute;
-  right: 4%;
-  bottom: 11%;
+  right: 23%;
+  bottom: 16%;
   color: white;
   background-color: red;
   width: 27px;
@@ -109,4 +166,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
