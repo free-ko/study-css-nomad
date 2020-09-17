@@ -1,0 +1,118 @@
+@import "./index.html";
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 6vh;
+  margin-bottom: 6vh;
+  text-align: center;
+  font-size: 62px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 30px;
+  border: 2px solid black;
+  border-bottom: 1px solid black;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-right: 2px solid black;
+}
+
+header div:last-child {
+  border-right: none;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 25px;
+  border: 1px solid black;
+}
+
+main section:nth-child(3n) {
+  border-right: 2px solid black;
+}
+
+main section:nth-child(7),
+main section:nth-child(8),
+main section:nth-child(9) {
+  border-bottom: 2px solid black;
+}
+
+main section:nth-child(3n - 2) {
+  border-left: 2px solid black;
+}
+
+.section__img {
+  width: 80%;
+  height: 80%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 10%;
+}
+
+section:nth-child(1) .section__img {
+  background-image: url("assets/1.jpg");
+}
+
+section:nth-child(2) .section__img {
+  background-image: url("assets/2.jpg");
+}
+
+section:nth-child(3) .section__img {
+  background-image: url("assets/3.jpg");
+}
+
+section:nth-child(4) .section__img {
+  background-image: url("assets/4.jpg");
+}
+
+section:nth-child(5) .section__img {
+  background-image: url("assets/5.jpg");
+}
+
+section:nth-child(6) .section__img {
+  background-image: url("assets/6.jpg");
+}
+
+section:nth-child(7) .section__img {
+  background-image: url("assets/7.jpg");
+}
+
+section:nth-child(8) .section__img {
+  background-image: url("assets/8.jpg");
+}
+
+section:nth-child(9) .section__img {
+  background-image: url("assets/9.jpg");
+}
+
+.section__top,
+.section__bottom {
+  display: flex;
+  justify-content: space-between;
+}
