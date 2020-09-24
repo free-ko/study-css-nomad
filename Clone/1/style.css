@@ -1,0 +1,68 @@
+@import "./reset.css";
+
+body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.left {
+  width: 100%;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.title {
+  font-size: 64px;
+  margin-top: 130px;
+  margin-left: 40px;
+}
+
+.info__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 200px;
+  margin-left: 40px;
+}
+
+.info__info {
+  margin-left: 40px;
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.right {
+  width: 100%;
+  height: 100vh;
+  background-color: #e7473d;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  margin-top: 150px;
+}
+
+.header span:nth-child(1) {
+  font-size: 24px;
+}
+
+.main__img {
+  position: relative;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT4eMXdqzZocxef0inw87nAsHdhU3va83sDYg&usqp=CAU");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+}
+
+.main__img i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-size:24px;
